@@ -10,4 +10,10 @@ public class Test : MonoBehaviour
     {
         someTextToTest = "I commited something to Git!";
     }
+
+    private void AnotherChangeForTesting()
+    {
+        someTextToTest = "New Text";
+    }
+
 }
