@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - MapEntities
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - VFX
+  - 
+  - 
+  - GameplayUI
+  - 
+  - 
+  - 
+  - PauseMenu
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3087489049
+    locked: 0
+  - name: Midground
+    uniqueID: 1613788607
+    locked: 0
+  - name: Forground
+    uniqueID: 2493190359
+    locked: 0
+  - name: MapEntities
+    uniqueID: 4195557911
+    locked: 0
+  - name: VFX
+    uniqueID: 1968914781
+    locked: 0
+  - name: GameplayUI
+    uniqueID: 3669464853
+    locked: 0
+  - name: PauseMenu
+    uniqueID: 2384413729
+    locked: 0
