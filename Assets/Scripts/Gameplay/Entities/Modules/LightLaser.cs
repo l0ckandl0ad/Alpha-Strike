@@ -13,7 +13,7 @@ public class LightLaser : DirectWeapon
         accuracy = 0.95f;
 
         minRange = 0f;
-        maxRange = 50f;
+        maxRange = 15f;
 
         rateOfFire = 5f;
     }

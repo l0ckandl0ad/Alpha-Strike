@@ -47,10 +47,23 @@ public class UIMapEntityIconView : MonoBehaviour
         if (mapEntity.IsVisible)
         {
             MakeVisible(true);
+            AdjustIconPositionFromWorldToScreenSpace();
         }
         else
         {
             MakeVisible(false);
+        }
+    }
+
+    private void AdjustIconPositionFromWorldToScreenSpace()
+    {
+        if (mapEntity != null)
+        {
+            mapEntityIconScreenSpacePosition = mainCamera.WorldToScreenPoint(transform.position);
+            if (transform.position != mapEntityIconScreenSpacePosition)
+            {
+                mapEntityIconTransform.position = mapEntityIconScreenSpacePosition;
+            }
         }
     }
 }

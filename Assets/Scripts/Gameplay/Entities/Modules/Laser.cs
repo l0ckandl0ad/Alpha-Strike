@@ -13,7 +13,7 @@ public class Laser : DirectWeapon
         accuracy = 0.95f;
 
         minRange = 0f;
-        maxRange = 200f;
+        maxRange = 20f;
 
         rateOfFire = 15f;
     }

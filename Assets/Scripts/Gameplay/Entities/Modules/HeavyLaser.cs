@@ -13,7 +13,7 @@ public class HeavyLaser : DirectWeapon
         accuracy = 0.1f;
 
         minRange = 0f;
-        maxRange = 400f;
+        maxRange = 50f;
 
         rateOfFire = 30f;
     }

@@ -71,7 +71,8 @@ public class ActivePlatformGroupActions : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0) && !Input.GetKey(KeyCode.LeftShift)) // single waypoint addded on LMB click
             {
-                if (!EventSystem.current.IsPointerOverGameObject())
+                //if (!EventSystem.current.IsPointerOverGameObject())
+                if (true)
                 {
                     currentFleetCommandHandler.RemoveAllCommands();
                     Vector3 mouseCoordinates = new Vector3();
@@ -86,7 +87,8 @@ public class ActivePlatformGroupActions : MonoBehaviour
             }
             if (Input.GetKey(KeyCode.LeftShift) && Input.GetMouseButtonDown(0))
             {
-                if (!EventSystem.current.IsPointerOverGameObject())
+                //if (!EventSystem.current.IsPointerOverGameObject())
+                if (true)
                 {
                     Vector3 mouseCoordinates = new Vector3();
                     mouseCoordinates = Camera.main.ScreenToWorldPoint(Input.mousePosition);

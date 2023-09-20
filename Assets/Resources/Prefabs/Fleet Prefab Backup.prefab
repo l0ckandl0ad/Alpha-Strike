@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 2175855074100898657}
   - component: {fileID: 8913616376814219546}
   m_Layer: 0
-  m_Name: Fleet Prefab
+  m_Name: Fleet Prefab Backup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
