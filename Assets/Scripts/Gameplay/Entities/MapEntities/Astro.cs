@@ -22,10 +22,9 @@ public class Astro : MonoBehaviour, IMapEntity
         IsVisible = trueOrFalse;
     }
 
-    private void Awake() // temp
+    private void Start() // temp
     {
         Name = SayMyName;
-
     }
 
     public void AddEntity(IEntity entity)

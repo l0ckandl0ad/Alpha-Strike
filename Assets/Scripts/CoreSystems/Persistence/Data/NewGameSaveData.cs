@@ -37,11 +37,15 @@ public class NewGameSaveData : ISaveData
 
         // Creating ships from the list of names
         List<IVessel> bluforShipList = new List<IVessel>();
+        List<IVessel> bluforShipList2 = new List<IVessel>();
+
         List<IVessel> opforShipList = new List<IVessel>();
         List<IVessel> opforShipList2 = new List<IVessel>();
 
         bluforShipList = Shipyard.BuildShips("BluforDD", bluforDestroyerNamesList);
         bluforShipList.Add(Shipyard.BuildShip("BluforCV", "Langley"));
+
+        bluforShipList2.Add(Shipyard.BuildShip("BluforDD", "Real Horizon"));
 
         opforShipList = Shipyard.BuildShips("OpforDD", opforShipNamesList);
 
@@ -52,11 +56,15 @@ public class NewGameSaveData : ISaveData
         IFleetData bluforFleet1 = new FleetData("BLUFOR FLEET 1", IFF.BLUFOR, bluforShipList, 0f, -300f);
         fleetDataList.Add(bluforFleet1);
 
+        IFleetData bluforFleet2 = new FleetData("BLUFOR FLEET 2", IFF.BLUFOR, bluforShipList2, 100000f, 100000f);
+        fleetDataList.Add(bluforFleet2);
+
         IFleetData opforFleet1 = new FleetData("OPFOR FLEET 1", IFF.OPFOR, opforShipList, 0f, 150f);
         fleetDataList.Add(opforFleet1);
 
         IFleetData opforFleet2 = new FleetData("OPFOR FLEET 2", IFF.OPFOR, opforShipList2, 0f, 190f);
         fleetDataList.Add(opforFleet2);
+
     }
     public List<IFleetData> GetFleetData()
     {

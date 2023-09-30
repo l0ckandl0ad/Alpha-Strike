@@ -42,7 +42,7 @@ public class UIMapEntityIconView : MonoBehaviour
     {
         mapEntityIconGameObject.SetActive(trueOrFalse);
     }
-    private void Update()
+    private void LateUpdate()
     {
         if (mapEntity.IsVisible)
         {
